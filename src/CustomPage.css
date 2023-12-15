@@ -1,0 +1,86 @@
+/* CustomPage.css */
+
+.custom-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .ingredient {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="range"] {
+    width: 70%;
+  }
+  
+  span {
+    width: 30px;
+    text-align: right;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: #174978; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #46769b; /*hover background color */
+  }
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default appearance for Webkit browsers */
+    appearance: none; /* Remove default appearance for other browsers */
+    width: 100%; /* Set the width of the slider */
+    height: 15px; /* Set the height of the slider track */
+    background: #174978; /* Set the background color for the track */
+    border-radius: 3px; /* Add rounded corners to the track */
+    outline: none; /* Remove the default outline style */
+    opacity: 0.7; /* Set the default opacity for the track */
+    transition: opacity 0.2s; /* Add a transition effect for opacity */
+  }
+  
+  /* Style the slider thumb (handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance for Webkit browsers */
+    appearance: none; /* Remove default appearance for other browsers */
+    width: 30px; /* Set the width of the thumb */
+    height: 20px; /* Set the height of the thumb */
+    background: #ffffff; /* Set the background color for the thumb */
+    border-radius: 20%; /* Make the thumb circular */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the thumb */
+    border: 1px solid #000000;
+}
+    input[type="range"]:focus {
+    opacity: 1;
+  }
+  
+  
